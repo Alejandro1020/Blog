@@ -1,0 +1,362 @@
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+header{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 180px;
+    align-items: center;
+    box-shadow: 8px 0px 10px 0 rgb(95, 95, 95) ;
+    margin-bottom: 40px;   
+}
+header img{
+    display: none;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+    margin: auto 0;
+}
+main h1{
+    text-align: center;
+}
+.btn{
+    width: 170px;
+}
+
+.boton-abaut{
+    text-decoration: none;
+    color: rgb(245, 241, 237);
+}
+.boton-abaut:hover{
+    color:red;
+}
+.description{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 20px;
+    justify-items: center;
+    margin-left: auto;
+    /* border-bottom: solid 3px black; */
+    margin: 40px auto 40px;
+    
+}
+.perfil-profesional{
+    width: 90%;
+    margin: 100px auto 100px;
+    margin-top: 20px;
+}
+.diplomas-container{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px ;
+    margin: auto;
+    grid-template-columns: repeat(1,  minmax(200px, 300px)) ;
+    grid-area: auto;
+    gap: 30px;       
+   
+}
+.new{
+    width: 90%;
+    margin: auto;
+}
+.otros{
+    text-align: center;
+}
+
+main section img{
+    width: 300px;   
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px 0 rgb(95, 95, 95) ;
+    
+    
+
+}
+.social{
+    width: 80px;
+    height: 80px;   
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+
+}
+.whatsapp{
+    
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+footer{
+   
+    margin-bottom: 15px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(47, 47, 47);
+    
+}
+footer h3{
+    margin-top: 30px;
+    font-size: 15px;
+    color: rgb(250, 246, 246);
+    text-align: center;
+    
+}
+
+@media (min-width: 600px) {
+    header{
+        display: flex;
+        justify-content:space-around;
+        width: 100%;
+        height: 180px;
+        align-items: center;
+        /* background-color: rgb(197, 192, 192); */
+        margin-bottom: 40px; 
+        box-shadow: 8px 0px 10px 0 rgb(95, 95, 95) ; 
+       
+    }
+    
+    header img{
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 50px;
+        margin: auto 0;
+    }
+    .boton-abaut{
+        text-decoration: none;
+        color: rgb(245, 241, 237);
+    }
+    .boton-abaut:hover{
+        color:red;
+    }
+    main h1{
+        text-align: center;
+    }
+    
+    
+       
+        
+    .description{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        width: 90%;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+        
+        margin-left: auto;
+        /* border-bottom: solid 3px black; */
+        margin: 40px auto 40px;
+        
+    }
+    .perfil-profesional{
+        width: 90%;
+        margin: 100px auto 100px;
+        margin-top: 20px;
+        border-bottom: 3px solid black;
+    }
+    .diplomas-container{
+        display: grid;
+        justify-content: center;
+        margin-top: 50px ;
+        grid-template-columns: repeat(2,  minmax(200px, 300px)) ;
+        grid-area: auto;
+        gap: 30px;       
+        background-color: rgb(210, 225, 225);
+        margin-bottom: 50px;
+        box-shadow: 8px 0px 10px 0 rgb(95, 95, 95) ;
+    
+        
+    }
+    
+    
+    main section img{
+        width: 300px;   
+        border-radius: 10px;
+        box-shadow: 8px 8px 10px 0 rgb(95, 95, 95) ;
+        
+        
+    
+    }
+    main section img:active{
+        width: 400px;
+        height: 400px;
+        position:absolute;
+        
+       
+    }
+    .new{
+        width: 90%;
+        margin: auto;
+    }
+    .social{
+        width: 80px;
+        height: 80px;   
+        border-radius: 50%;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    
+    }
+    .whatsapp{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    header section a{
+        margin: 20px;
+    }
+    .otros{
+        text-align: center;
+    }
+    
+    footer{
+       
+        margin-bottom: 15px;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(47, 47, 47);
+        
+    }
+    footer h3{
+        color: white;
+        text-align: center;
+        
+    }
+    
+    
+}
+@media (min-width: 1000px) {
+    header{
+        display: flex;
+        justify-content:space-around;
+        width: 100%;
+        height: 180px;
+        align-items: center;
+        /* background-color: rgb(240, 239, 239); */
+        margin-bottom: 40px;  
+        box-shadow: 8px 0px 10px 0 rgb(5, 5, 5) ;
+    }
+    
+    header img{
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 50px;
+        margin: auto 0;
+    }
+    .boton-abaut{
+        text-decoration: none;
+        color: rgb(245, 241, 237);
+    }
+    .boton-abaut:hover{
+        color:red;
+    }
+    main h1{
+        text-align: center;
+    }
+    
+    
+       
+        
+    .description{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        width: 90%;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+        
+        margin-left: auto;
+        /* border-bottom: solid 3px black; */
+        margin: 40px auto 40px;
+        
+    }
+    .perfil-profesional{
+        width: 90%;
+        margin: 100px auto 100px;
+        margin-top: 20px;
+        border-bottom: 3px solid black;
+    }
+    .diplomas-container{
+        display: grid;
+        justify-content: center;
+        margin-top: 50px ;
+        grid-template-columns: repeat(3,  minmax(200px, 300px)) ;
+        grid-area: auto;
+        gap: 30px;       
+        background-color: #e0c0a9;
+        margin-bottom: 50px;
+        box-shadow: 8px 0px 10px 0 rgb(95, 95, 95) ;
+    
+        
+    }
+    
+    
+    main section img{
+        width: 300px;   
+        border-radius: 10px;
+        box-shadow: 8px 8px 10px 0 rgb(95, 95, 95) ;
+        
+        
+    
+    }
+    main section img:active{
+        width: 400px;
+        height: 400px;
+        position:absolute;
+        
+       
+    }
+    .new{
+        width: 90%;
+        margin: auto;
+    }
+    .social{
+        width: 80px;
+        height: 80px;   
+        border-radius: 50%;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    
+    }
+    .whatsapp{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    header section a{
+        margin: 20px;
+    }
+    .otros{
+        text-align: center;
+    }
+    
+    footer{
+       
+        margin-bottom: 15px;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(47, 47, 47);
+        box-shadow: 8px 0px 10px 0 rgb(95, 95, 95) ;
+        
+    }
+    footer h3{
+        color: white;
+        text-align: center;
+        
+    }
+    
+    
+}
+
